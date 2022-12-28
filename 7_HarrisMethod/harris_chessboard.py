@@ -8,7 +8,7 @@ def import_image(image_name):
 
     img = cv2.imread(image_name)
 
-    # Transform to gray scale and to flaot32
+    # Transform to gray scale and to float32
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     gray = np.float32(gray)
     height, width = gray.shape
